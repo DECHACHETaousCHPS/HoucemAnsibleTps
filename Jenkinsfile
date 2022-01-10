@@ -14,7 +14,7 @@ node {
  
  stage('Deploy') {
     
-     sh 'ansible-playbook -b copy.yml'
+     sh 'sudo ansible-playbook -b copy.yml'
  }
  
     
