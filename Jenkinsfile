@@ -2,7 +2,7 @@ node {
  
  stage('clone') {
     
-    git 'https://gitlab.com/khlifidev1/projet_j2e.git'
+    git 'git@github.com:DECHACHETaousCHPS/HoucemAnsibleTps.git'
 
  }
  
