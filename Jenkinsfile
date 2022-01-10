@@ -2,7 +2,7 @@ node {
  
  stage('clone') {
     
-    git 'git@github.com:DECHACHETaousCHPS/HoucemAnsibleTps.git'
+    git 'https://github.com/DECHACHETaousCHPS/HoucemAnsibleTps.git'
 
  }
  
