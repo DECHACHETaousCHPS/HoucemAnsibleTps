@@ -8,13 +8,13 @@ node {
  
   stage('Build') {
     
-      sh 'mvn clean install package'
+      sh 'sudo mvn clean install package'
 
  }
  
  stage('Deploy') {
     
-     sh 'ansible-playbook -i hosts copy.yml' 
+     sh 'ansible-playbook -i /etc/ansible/hosts copy.yml' 
  }
  
     
