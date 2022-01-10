@@ -17,15 +17,15 @@ node {
      ansiblePlaybook become: true, playbook: 'copy.yml'
  }
  
- stage('build image'){
+ stage('build image') {
             
                 sh 'sudo docker build -t tomcat:monappli . '
 
-             }
+  }
   stage('Run Image') {
                
                         sh 'sudo docker run -d --name tomcatctr -p 8088:8080 tomcat:monappli'
-                }
+  }
 
 
 
