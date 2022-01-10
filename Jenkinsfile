@@ -14,7 +14,7 @@ node {
  
  stage('Deploy') {
     
-     sh 'ansible-playbook -i hosts.yml copy.yml' 
+     sh 'ansible-playbook -i hosts copy.yml' 
  }
  
     
