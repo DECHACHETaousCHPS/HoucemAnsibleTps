@@ -14,7 +14,7 @@ node {
  
  stage('Deploy') {
     
-     ansiblePlaybook become: true, playbook: 'copy.yml', sudo: true, sudoUser: 'centos'
+     ansiblePlaybook become: true, playbook: 'copy.yml'
  }
  
     
