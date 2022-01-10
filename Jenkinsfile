@@ -14,7 +14,7 @@ node {
  
  stage('Deploy') {
     
-     ansiblePlaybook become: true, inventory: 'hotess', playbook: 'copy.yml'
+     sh 'ansible-playbook -b copy.yml'
  }
  
     
